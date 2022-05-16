@@ -1,0 +1,122 @@
+:root {
+    --vermelhor:#E50914 ;
+    --black:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: var(--black);
+    font-family: 'Arial', Times, serif;    
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelhor);
+    font-size: 40px;
+    font-family: 'Arial Black' , Times, serif;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    
+}
+
+header nav a:hover{
+    color: white;
+}
+
+.filme-principal {
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/netflix/img/imagem-capa.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    border: none;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 60%;
+    margin-top: 10%;
+}
+
+.carrosel-filmes .item {
+    height: 100%;
+    width: 100%;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* media queries */
+
+@media screen and (max-width: 700px){
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .descricao {
+        width: 50%;
+    }
+}
